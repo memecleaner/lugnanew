@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="moodtracker.css" />
+    <title>Mood Tracker</title>
+  </head>
+  <body style="background-image: url(/pictures/Group48.png); background-repeat: no-repeat; background-size: contain; background-attachment: fixed;">
+    <div class="container-fluid">
+      <div class="container-sm" style="padding: 8px 0;">
+        </div>
+      </div>
+      <a href="../menu.html"><img src="../pictures/backbutton.png" style="margin:10px 0px 5px 13px; position: fixed;" alt=""></a>
+      <div class="haloapakabar">
+          <img src="../pictures/haloapakabar.png" style="margin: 70px 0px 0px 7px; position: fixed;" alt="">
+      </div>
+      <div class="row" style="margin: 5px; margin-top: 170px;">
+        <a
+          class="col-4"
+          href="pertanyaan1.html"
+          onclick="handleEmotion('Baik')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/great.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Baik</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="jurnaltab3b.html"
+          onclick="handleEmotion('Senang')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/happy.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Senang</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="jurnaltab3b.html"
+          onclick="handleEmotion('Semangat')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/exited.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Semangat</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="jurnaltab3b.html"
+          onclick="handleEmotion('Santai')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/Relaxed.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Santai</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="jurnaltab3b.html"
+          onclick="handleEmotion('Bersyukur')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/greatful.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Bersyukur</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="jurnaltab3b.html"
+          onclick="handleEmotion('Bimbang')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/Unsure.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Bimbang</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="Jurnaltab3.html"
+          onclick="handleEmotion('Lelah')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/tired.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Lelah</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="Jurnaltab3.html"
+          onclick="handleEmotion('Hampa')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/Distracted.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Hampa</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="Jurnaltab3.html"
+          onclick="handleEmotion('Stress')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/stressed.svg"
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Stress</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="Jurnaltab3.html"
+          onclick="handleEmotion('Gelisah')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/anxious.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Gelisah</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="Jurnaltab3.html"
+          onclick="handleEmotion('Kesal')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/sick.svg"
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Kesal</h6>
+            </div>
+          </div>
+        </a>
+        <a
+          class="col-4"
+          href="Jurnaltab3.html"
+          onclick="handleEmotion('Sedih')"
+        >
+          <div class="d-flex justify-content-around">
+            <div
+              class="px-3 py-1 m-1 emot-wrapper"
+              style="background-color: white; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);"
+            >
+              <img
+                src="../Moodemoji/sad.svg "
+                class="emot-img"
+                alt=""
+                srcset=""
+              />
+              <h6 class="emot-text" style="text-align: center;">Sedih</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../app.js"></script>
+  </body>
+</html>
