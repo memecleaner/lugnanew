@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+}
+.btn,
+.blank {
+  flex: 1;
+}
+
+footer {
+  /* margin: 10px; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

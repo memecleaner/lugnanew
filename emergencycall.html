@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="emergencycall.css" />
+    <title>Lugna</title>
+  </head>
+
+  <body>
+    <nav
+      class="container-sm"
+      style="
+        background-color: #ff3a8c;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+      "
+    >
+      <div class="header">
+        <h2 style="margin-top: 20px; margin-bottom: 20px; color: white;">
+          <a href="Menu.html" class="previous round" "
+            ><img
+              src="/pictures/backward.png"
+              alt=""
+              style="margin-right: 20px;" /></a
+          >Emergency call
+        </h2>
+      </div>
+    </nav>
+    <div
+      class="card mb-5"
+      style="background-color: #fff2e5; padding-top: 80px;"
+    >
+      <ul class="list-group list-group-flush" onclick="emergencyCall()">
+        <a href="tel:+62 85814718630">
+          <li class="list-group-item">
+            <h5 style="color: black; margin-top: 25px;">Hotline Cegah bunuh diri</h5>
+            <p style="font-size: 10px; color: grey;">
+              Memberikan dukungan emosional yang gratis dan rahasia kepada orang
+              orang yang berada dalam krisis bunuh diri
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">perempuan</h5>
+            <p style="font-size: 10px; color: grey;">
+              penegakan HAM perempuan di Indonesia meningkatkan upaya pencegahan
+              dan penanggulangan segala bentuk kekerasan terhadap perempuan dan
+              perlindungan HAM perempuan
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">LBH - APK</h5>
+            <p style="font-size: 10px; color: grey;">
+              Memberikan bantuan hukum pada rakyat miskin buta hukum dan
+              tertindas
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">Ambulance</h5>
+            <p style="font-size: 10px; color: grey;">
+              Ambulan hanya untuk keadaan darurat
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">Cegah bullying</h5>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">Teman dekat 1</h5>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">Teman dekat 2</h5>
+          </li>
+          <li class="list-group-item">
+            <h5 style="color: black;">Teman dekat 3</h5>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <script>
+      $(function () {
+        if (navigator.userAgent.match(/(iPhone|Android.*Mobile)/i)) {
+          $("a[data-tel]").each(function () {
+            $(this).prop("href", "tel:" + $(this).data("tel"));
+          });
+        }
+      });
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

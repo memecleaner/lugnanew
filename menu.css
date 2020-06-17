@@ -1,0 +1,23 @@
+.emergencyCallbtn {
+  width: 90%;
+}
+.cardbody h4 {
+  align-items: center;
+}
+footer {
+  /* margin: 10px; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+/* .container-sm{
+      ma
+  } */
+* {
+  box-sizing: border-box;
+}
+.homebutton {
+  text-align: center;
+}

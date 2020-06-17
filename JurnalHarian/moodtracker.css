@@ -1,0 +1,12 @@
+.emot-wrapper {
+  border-radius: 20px;
+}
+
+.emot-img {
+  width: 80px;
+}
+
+.emot-text {
+  text-align: center;
+  color: black;
+}
