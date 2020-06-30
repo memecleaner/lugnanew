@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
     <title>ruang aman</title>
   </head>
   <body
@@ -22,6 +42,37 @@
     <h1 style="margin-left: 20px; color: white;">
       Ruang Aman
     </h1>
-    <div class="container-sm"></div>
+    <div class="container-sm">
+      <div class="row">
+        <div class="column">
+          <div>
+            <img src="/pictures/anxiety.png" alt="" />
+          </div>
+          <div>
+            <img src="/pictures/eatingdissorder.png" alt="" />
+          </div>
+          <div>
+            <img src="/pictures/korbanbully.png" alt="" />
+          </div>
+          <div>
+            <img src="/pictures/korbanbully.png" alt="" />
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <img src="/pictures/brokenhome.png" alt="" />
+          </div>
+          <div>
+            <img src="/pictures/selflove.png" alt="" />
+          </div>
+          <div>
+            <img src="/pictures/addiction.png" alt="" />
+          </div>
+          <div>
+            <img src="/pictures/addiction.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
